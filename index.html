@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>uMusic</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/1b64cf4547.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- ASIDE -->
+    <!-- 
+      *
+      *
+     -->
+    <aside>
+      <!--  -->
+      <div class="profile">
+        <div class="img"></div>
+        <div class="data">
+          <p>Rishabh Maloo</p>
+          <span>
+            Edit profile
+            <i data-feather="settings"></i>
+          </span>
+        </div>
+      </div>
+      <!--  -->
+      <div class="dropdown">
+        <input type="checkbox" name="menu-drop" id="menu-drop" />
+        <label for="menu-drop" class="menu-drop-label">
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <!--  -->
+      <nav>
+        <span class="close-dropdown">
+          <i data-feather="x"></i>
+        </span>
+        <ul>
+          <li class="active"><i data-feather="aperture"></i> Overview</li>
+          <li><i data-feather="trello"></i> News</li>
+          <li><i data-feather="music"></i> Playlists</li>
+          <li><i data-feather="radio"></i> Discover</li>
+        </ul>
+        <!--  -->
+        <ul>
+          <li><i data-feather="sliders"></i> Dashboard</li>
+          <li><i data-feather="message-square"></i> Messages</li>
+          <li><i data-feather="bell"></i> Notifications</li>
+          <li><i data-feather="user"></i> Account</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- CONTENT -->
+    <!-- 
+      *
+      *
+     -->
+    <div class="container">
+      <!--  -->
+      <div class="search">
+        <input
+          type="search"
+          name="search"
+          id="search"
+          placeholder="Search artists, playlists or tracks"
+        />
+        <label for="search"><i data-feather="search"></i></label>
+      </div>
+      <!--  -->
+      <div class="featured-playlists">
+        <!--  -->
+        <h2>Featured Playlists</h2>
+        <div class="playlists">
+          <div class="playlist pl1">
+            <div class="img">
+              <img src="amit.jpg" alt="Thumbnail Playlist" />
+            </div>
+            <div class="info-playlist">
+              <h2>Amit Trivedi</h2>
+              <span>24 tracks</span>
+            </div>
+          </div>
+          <!--  -->
+          <div class="playlist pl2">
+            <div class="img">
+              <img src="qala.jpg" alt="Thumbnail Playlist" />
+            </div>
+            <div class="info-playlist">
+              <h2>Qala</h2>
+              <span>12 tracks</span>
+            </div>
+          </div>
+          <!--  -->
+          <div class="playlist pl3">
+            <div class="img">
+              <img src="nusrat.jpg" alt="Thumbnail Playlist" />
+            </div>
+            <div class="info-playlist">
+              <h2>Ustad Nusrat Fateh Ali Khan</h2>
+              <span>163 tracks</span>
+            </div>
+          </div>
+          <!--  -->
+          <div class="playlist pl4">
+            <div class="img">
+              <img src="dapu.jpg" alt="Thumbnail Playlist" />
+            </div>
+            <div class="info-playlist">
+              <h2>Dapu Khan</h2>
+              <span>138 tracks</span>
+            </div>
+          </div>
+          <!--  -->
+          <div class="playlist pl5">
+            <div class="img">
+              <img src="data:image/jpeg;base64,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" alt="Thumbnail Playlist" />
+            </div>
+            <div class="info-playlist">
+              <h2>Kishore Kumar</h2>
+              <span>103 tracks</span>
+            </div>
+          </div>
+          <div class="playlist pl6">
+            <div class="img">
+              <img src="gurdas.jpg" alt="Thumbnail Playlist" />
+            </div>
+            <div class="info-playlist">
+              <h2>Gurdas Maan</h2>
+              <span>58 tracks</span>
+            </div>
+          </div>
+          <div class="playlist pl6">
+            <div class="img">
+              <img src="shanu.jpg" alt="Thumbnail Playlist" />
+            </div>
+            <div class="info-playlist">
+              <h2>Sanu Da</h2>
+              <span>400 tracks</span>
+            </div>
+          </div>
+          <div class="playlist pl7">
+            <div class="img">
+              <img src="mame.jpg" alt="Thumbnail Playlist" />
+            </div>
+            <div class="info-playlist">
+              <h2>Mame Khan</h2>
+              <span>15 tracks</span>
+            </div>
+          </div>
+          <div class="playlist pl8">
+            <div class="img">
+              <img src="rahman.jpg" alt="Thumbnail Playlist" />
+            </div>
+            <div class="info-playlist">
+              <h2>A R Rahman</h2>
+              <span>85 tracks</span>
+            </div>
+          </div>
+          <div class="playlist pl9">
+            <div class="img">
+              <img src="udit.jpg" alt="Thumbnail Playlist" />
+            </div>
+            <div class="info-playlist">
+              <h2>Udit Narayan</h2>
+              <span>250 tracks</span>
+            </div>
+          </div>
+          <div class="playlist pl10">
+            <div class="img">
+              <img src="jhanvi.jpg" alt="Thumbnail Playlist" />
+            </div>
+            <div class="info-playlist">
+              <h2>Jahnavi Harrison</h2>
+              <span>66 tracks</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="views">
+        <div class="profile-views">
+          <!--  -->
+          <h2>Profile Views</h2>
+          <div class="container-views">
+            <div class="view v1">
+              <div class="img"></div>
+              <div class="info">
+                <p>Ghode Pe Sawar</p>
+                <span>10 Min ago</span>
+              </div>
+              <span>4 albums</span>
+            </div>
+            <!--  -->
+            <div class="view v2">
+              <div class="img"></div>
+              <div class="info">
+                <p>Maan Meri Jaan</p>
+                <span>1 day ago</span>
+              </div>
+              <span>2 albums</span>
+            </div>
+            <!--  -->
+            <div class="view v3">
+              <div class="img"></div>
+              <div class="info">
+                <p>Koi Deewana Kehta Hain</p>
+                <span>5 days ago</span>
+              </div>
+              <span>5 albums</span>
+            </div>
+          </div>
+        </div>
+
+        <!--  -->
+        <div class="suggestions">
+          <h2>Tracks</h2>
+          <div class="tracks">
+            <!--  -->
+            <div class="track t1">
+              <div  class="img"></div>
+              <img src="music.png" alt="" srcset="">
+              <p>Mame Khan</p>
+              <span>Kesariya Balam</span>
+            </div>
+            <!--  -->
+            <div class="track t2">
+              <div class="img"></div>
+              <img src="music.png" alt="">
+              <p>Ritviz</p>
+              <span>Mehfooz</span>
+            </div>
+            <!--  -->
+            <div class="track t3">
+              <div class="img"></div>
+              <img src="music.png" alt="">
+              <p>B Praak</p>
+              <span>Dholna</span>
+            </div>
+            <!--  -->
+            <div class="track t4">
+              <div class="img"></div>
+              <img src="music.png" alt="">
+              <p>King</p>
+              <span>OOPS</span>
+            </div>
+            <!--  -->
+            <div class="track t5">
+              <div class="img"></div>
+              <img src="music.png" alt="">
+              <p>Anuv Jain</p>
+              <span>Baarishein</span>
+            </div>
+            <!--  -->
+            <div class="track t6">
+              <div class="img"></div>
+              <img src="music.png" alt="">
+              <p>MC Square</p>
+              <span>Ram Ram</span>
+            </div>
+            <!--  -->
+            <div class="track t7">
+              <div class="img"></div>
+              <img src="music.png" alt="">
+              <p>Qismat</p>
+              <span>Ammy Virk</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
